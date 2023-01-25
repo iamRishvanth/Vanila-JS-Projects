@@ -2,6 +2,10 @@ const colors = ["red", "green", "blue", "yellow"];
 const btn = document.getElementById('btn');
 const color = document.querySelector(".color");
 
+
+//Developed for Consecutive Random No. Should not Same
+//Compare 'newRandomNo' with 'randomNo'
+
 let randomNo = 0;
 
 btn.addEventListener('click', function () {
@@ -12,7 +16,7 @@ btn.addEventListener('click', function () {
     randomNo = newRandomNo;
     console.log(randomNo);
     document.body.style.backgroundColor = colors[randomNo];
-    color.innerHTML = colors[randomNo];
+    color.innerText = colors[randomNo];
 })
 
 function getRandomNo(min, max) {
